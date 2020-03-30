@@ -1,0 +1,254 @@
+/* Structure principale */
+html {
+	height: 100%;
+	width: 100%;
+	margin:0px;
+	padding: 0px;
+}
+
+body{
+	margin:0px;
+	padding: 0px;
+	width: 100%;
+	font-family: Arial, Verdana, Geneva, sans-serif;
+	background-color: #f2ffdd;
+
+	min-height:100vh;
+	display:flex;
+	flex-direction:column;
+}
+
+section{
+	flex-grow: 1;
+	padding: 30px;
+	margin: auto;
+	width: 800px;
+	background-color: white;
+	padding-top: 50px;
+}
+
+footer {
+	height: 50px;
+	width:99%;
+	padding-right: 1%;
+	background-color:white;
+	text-align: right;
+	border-top: 1px solid #aac97a;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height:40px;
+	background-color:#34413F;
+	display: flex;
+    justify-content: center;
+}
+
+/* Liens */
+a, a:visited{
+	color:#335400;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/* Barres de navigation */
+nav{
+	flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+	list-style-type:none;
+	flex: 1 1 auto;
+	display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+	display:inline-flex;
+}
+
+nav ul li a{
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+header nav ul li a, header nav ul li a:visited{
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	color:#EFF2F1;
+}
+
+nav ul li a:hover{
+	color: #7fd000;
+	text-decoration: none;
+}
+
+header nav ul li a:hover{
+	color: greenyellow;
+}
+
+
+/* Tableaux */
+table {
+	table-layout: fixed;
+	width:100%;
+	border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th{
+	background-color:#f2ffdd;
+}
+
+th, td{
+	padding: 5px;
+}
+
+/* Titres */
+h1 { font-size: 1.5em }
+
+h2 { font-size: 1.1em }
+
+h3 {font-size : 1em;}
+
+hr{
+	color:#EFF2F1;
+}
+
+/* Formulaire */
+label {
+	float: left;
+	width: 15em;
+	text-align: left;
+}
+
+input, textarea, select {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+input.submit {
+	margin-left: 6em;
+}
+
+/* Images */
+#profil_image{
+	height:100px;
+	width:100px;
+	border-radius:20px;
+	margin: 0 auto;
+    display: block;
+}
+
+#warning_icon{
+	width:50px;
+	height:50px;
+	float:left;
+}
+
+#userScore{
+	max-width: 300px;
+}
+
+#php1, #php2, #php3, #php4, #php5{
+	width:40px;
+	height:40px;
+	float:left;
+}
+
+#scoreExist{
+	width:20px;
+	height:20px;
+}
+.objet_emp{
+	width: 52%;
+    margin: 0 auto;
+    padding: 15px;
+    font-weight: bold;
+	color:black;
+}
+
+.favori {
+     border:none;
+     background: url('images/heart.png');
+     width:64px;
+     height:64px;
+}
+
+
+input[name="submit_rating"] {
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+.containerdiv {
+  border: 0;
+  float: left;
+  position: relative;
+  width: 300px;
+}
+.cornerimage {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+ }
+ 
+ /* hover dropdown menu */
+  /* Dropdown Button */
+.dropbtn {
+  background-color: #34413F;
+  color: white;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #34413F;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: greenyellow;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: greenyellow;} 
